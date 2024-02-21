@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="4" failures="2" errors="0" time="7.120938">
+	<testsuite tests="0" failures="0" time="0.000000" name="github.com/ReticentFacade/go-notes/grpc-test" timestamp="2023-09-14T08:35:27+05:30">
+		<properties>
+			<property name="go.version" value="go1.21.0 darwin/amd64"></property>
+		</properties>
+	</testsuite>
+	<testsuite tests="4" failures="2" time="1.035000" name="github.com/ReticentFacade/go-notes/grpc-test/cmd" timestamp="2023-09-14T08:35:27+05:30">
+		<properties>
+			<property name="go.version" value="go1.21.0 darwin/amd64"></property>
+		</properties>
+		<testcase classname="github.com/ReticentFacade/go-notes/grpc-test/cmd" name="TestGetGopher" time="-0.000000">
+			<failure message="Failed" type="">=== RUN   TestGetGopher&#xA;=== RUN   TestGetGopher/req_ok&#xA;=== PAUSE TestGetGopher/req_ok&#xA;=== CONT  TestGetGopher/req_ok&#xA;=== RUN   TestGetGopher/req_with_empty_name&#xA;=== PAUSE TestGetGopher/req_with_empty_name&#xA;=== CONT  TestGetGopher/req_with_empty_name&#xA;name must not be empty in the request&#xA;    server_test.go:49: Got :  &#xA;--- PASS: TestGetGopher/req_with_empty_name (0.00s)&#xA;2023/09/14 08:35:34 Can&#39;t get the Gopher :-(&#xA;=== RUN   TestGetGopher/nil_request&#xA;=== PAUSE TestGetGopher/nil_request&#xA;=== CONT  TestGetGopher/nil_request&#xA;request must not be nil&#xA;    server_test.go:49: Got :  &#xA;--- PASS: TestGetGopher/nil_request (0.00s)&#xA;2023/09/14 08:35:34 Received: yoda-gopher&#xA;</failure>
+		</testcase>
+		<testcase classname="github.com/ReticentFacade/go-notes/grpc-test/cmd" name="TestGetGopher/req_ok" time="-0.000000">
+			<failure message="Failed" type="">=== RUN   TestGetGopher/req_ok&#xA;=== PAUSE TestGetGopher/req_ok&#xA;=== CONT  TestGetGopher/req_ok&#xA;</failure>
+		</testcase>
+		<testcase classname="github.com/ReticentFacade/go-notes/grpc-test/cmd" name="TestGetGopher/nil_request" time="0.000000"></testcase>
+		<testcase classname="github.com/ReticentFacade/go-notes/grpc-test/cmd" name="TestGetGopher/req_with_empty_name" time="0.000000"></testcase>
+	</testsuite>
+	<testsuite tests="0" failures="0" time="0.000000" name="github.com/ReticentFacade/go-notes/grpc-test/pkg/gopher" timestamp="2023-09-14T08:35:27+05:30">
+		<properties>
+			<property name="go.version" value="go1.21.0 darwin/amd64"></property>
+		</properties>
+	</testsuite>
+</testsuites>

@@ -1,0 +1,1 @@
+/Users/Reticent/Desktop/Work/ProjectWorkspace/github/go-notes/cgo-test/hello_user/target/release/libhello_user.dylib: /Users/Reticent/Desktop/Work/ProjectWorkspace/github/go-notes/cgo-test/hello_user/src/hello.rs /Users/Reticent/Desktop/Work/ProjectWorkspace/github/go-notes/cgo-test/hello_user/src/lib.rs

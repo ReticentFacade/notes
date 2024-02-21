@@ -1,0 +1,22 @@
+# https://taskfile.dev
+
+version: "3"
+
+tasks:
+  build:
+    desc: Build the app
+    cmds:
+      - GOFLAGS=-mod=mod go build -o bin/gopher-cli main.go
+    # silent: true
+
+  run: 
+    desc: Run the app
+    cmds:
+      - GOFLAGS=-mod=mod go run main.go
+    # silent: true
+  
+  clean:
+    desc: Remove all retrieved *.png files
+    cmds:
+      - rm *.png
+

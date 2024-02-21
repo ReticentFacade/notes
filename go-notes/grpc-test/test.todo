@@ -1,0 +1,45 @@
+enum MIME {
+    MIME_UNSPECIFIED = 0;
+    MIME_TXT = 1;
+    MIME_ZIP = 2;
+    MIME_PNG = 3;
+    MIME_JPG = 4;
+    MIME_JPEG = 5;
+    MIME_PDF = 6;
+    MIME_DOC = 7;
+    MIME_CSV = 8;
+    MIME_MD = 9;
+}
+
+enum Url {
+    enum SCHEMA {
+        SCHEMA_UNSPECIFIED = 0;
+        HTTP = 1;
+        HTTPS = 2;
+    }
+    SCHEMA schema = 1;
+    string rest = 2;
+}
+
+message ExpirationDate {
+    int year = 1;
+    int month = 2;
+    int day = 3;
+}
+
+message FileMetadata {
+    string ID = 1; 
+    string name = 2;
+    int size = 3;
+    MIME mime = 4;
+    string downloads = 5;
+    ExpirationDate expiration_date = 6;
+    Url share_link = 7;
+}
+
+message FileUpload {
+    string name = 1;
+    MIME mime = 2;
+    Url share_link = 3;
+    ExpirationDate expiration_date = 4;
+}
