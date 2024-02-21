@@ -49,12 +49,12 @@ For `mongodb1` container:
 
 *Disclaimer:* I could be wrong but when I tried pinging using mac directly, it showed `100% packet loss`. I think that could be because my host machine (mac) wasn't there on the network the two containers were communicating on. So, as a workaround, I followed the following steps: 
 
-  a) Opened `backend` container's shell: 
+a) Opened `backend` container's shell: 
 ```sh 
 ➜ docker exec -it backend bash
 root@ffddc39c7a7d:/usr/src/app# hostname
 ffddc39c7a7d
-```
+
 0 kB/s)
 debconf: delaying package configuration, since apt-utils is not installed
 Selecting previously unselected package libcap2-bin.
@@ -73,12 +73,15 @@ debconf: unable to initialize frontend: Dialog
 debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 78.)
 debconf: falling back to frontend: Readline
 Setting up iputils-ping (3:20221126-1) ...
-  b) `apt update`
+```
+
+b) `apt update`
+
 ```sh 
 root@ffddc39c7a7d:/usr/src/app# apt update
 ```
 
-  c) Installed `ping` 
+c) Installed `ping` 
 ```sh
 root@ffddc39c7a7d:/usr/src/app# apt install iputils-ping
 
@@ -99,7 +102,7 @@ Get:3 http://deb.debian.org/debian bookworm/main amd64 libpam-cap amd64 1:2.66-4
 Fetched 96.2 kB in 0s (108
 ```
 
-  d) Used ping and voila! 
+d) Used ping and voila! 
 ```sh 
 root@ffddc39c7a7d:/usr/src/app# ping 172.19.0.3
 
