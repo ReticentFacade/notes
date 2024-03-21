@@ -352,3 +352,10 @@ Will print a = 7
 - // Implement the addition function of two Complex Numbers.  
 - // Leetcode homework: 1480, 1021, 1614.
 --
+
+-----
+-----
+_19th March, 2024_
+
+# Linked List: 
+
