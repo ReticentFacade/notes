@@ -359,3 +359,95 @@ _19th March, 2024_
 
 # Linked List: 
 
+-----
+-----
+4th April, 2024
+
+# Binary Tree 
+
+- Finite set of nodes 
+- Special form of tree (TreeNodes), such that 
+if T is empty (called Empty Binary Tree) or,
+if T contains a specially designated node = Root Node 
+and because of this root-node concept, we don't have the concept of Tree DS, instead we have `rooted tree` because of root node present in the tree. 
+
+So, when you say `binary tree`, it actually means `rooted binary tree`.
+
+It means, one node is designated as the root. 
+
+- T contains the specially designated node called the root node, and the remaining nodes of T form the `Disjoint Binary Tree`.
+T1 & T2 are called left sub tree (LST) and right sub tree (RST) respectively.
+
+- No node can have more than 2 child nodes, that means a node can have 0, 1, 2 child nodes;
+
+- A tree DS can NEVER be empty (due to AXIOMS OF GRAPH THEORY) BUT a Binary Tree DS can be empty.
+
+- Remember, whatever we're studying here is ROOTED BINARY TREE. 
+Tree > Binary Tree > Rooted Binary Tree
+
+## Full Binary Tree and Complete Binary Tree: 
+
+- Full Binary Tree: A binary tree is a full binary tree IF if contains the maximum possible number of nodes at all levels. 
+
+- [Every full binary tree is a complete binary tree.]
+
+- Complete Binary Tree: A binary tree is a complete binary tree IF all its levels, except possibly the last level, have the maximum number of possible nodes, and all the nodes at the last level appear as LEFT as possible.
+
+- Complete binary tree MUST BE AS **LEFT-BIASED** AS POSSIBLE.
+
+- Multiple trees = forest data structure 
+
+## Properties of Binary Trees: 
+
+# ASK SIR about this :-> 
+- How does sometimes suddenly bank accounts receive huge number of amounts - SINCE BANKING SYSTEMS USE PRIME NUMBERS for generating unique IDs -
+BECAUSE OF BIT MANIPULATION IT SOMETIMES HAPPENS that they receive huge amounts of money. 
+
+-----
+-----
+8th April, 2024
+
+- Binary trees can be implemented USING double linked lists. 
+
+Convention: Left Child and Right Child are two link fields === reference fields === pointer fields;
+and are used to store address of left child and right child tree nodes. 
+
+
+- The two forms: Tree structure and Linked structre are lamost similar. 
+
+- This similarity implies that the `linked representation` of binary tree very closely resembles the *logical structure of the data involved in linked list*.
+
+- Other advantages: It allows `dynamic memory allocation`.
+
+-----
+*NOTE:*
+- HW: Read about 'Locality of reference', "Why arrays are more cache-friendly and trees are not."
+------
+
+- The need for storing `reference of pointers`, requires extra memory and this can cause `Memory Overhead` ----> smth about `memory fragmentation` (ref: `memory defragmentation`)
+
+- Array representation of tree: `buildTree.cpp` [Traversal = In-order]
+- Linked representation of tree: `buildTree2.cpp` [Traversal = In-order]
+
+- What if malloc fails to allocate memory? Ans: It returns `NULL`.
+
+----
+
+# Binary Search Tree: [BST]
+
+## Operations on BST: 
+
+*CRUD:*
+- Create: in array, in linked list
+- Read = Traversals: level order, in order 
+- Update: insert/modify an element -> ANY MATHEMATICAL OPERATIONS CAN BE EXPECTED.
+- Delete: delete one or more nodes 
+
+## Insertion: 
+
+- Insertion w.r.t. array: `bstArray.cpp`
+
+----
+*NOTE:*
+HW: Write linked list representation of this. 
+----
