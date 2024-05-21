@@ -1,0 +1,17 @@
+version: '3'
+
+tasks:
+  build:
+    description: Build the program
+    cmds:
+      - go build -o my_program main.go
+
+  clean:
+    description: Clean up
+    cmds:
+      - rm -f my_program
+
+  test:
+    description: Run tests
+    cmds:
+      - go test ./...

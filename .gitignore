@@ -1,0 +1,15 @@
+.DS_Store
+
+# Docker project directory
+.docker/
+
+# SQL project directory
+*.sql
+
+# Go project directory
+*.exe
+*.dll
+*.so
+*.dylib
+/vendor/
+

@@ -1,0 +1,14 @@
+.DS_Store
+/pp.c
+/out.go
+/a.out
+/pp.json
+/out
+/.idea
+/build
+/bin
+/coverage.txt
+/c2go
+/.vscode
+*.coverprofile
+tests/*.go
